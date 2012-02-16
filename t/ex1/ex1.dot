@@ -1,0 +1,11 @@
+// interconnect topology file
+digraph ex1
+{
+	u1 [verilog = "  assign i_0_dat = t_0_dat + t_1_dat;"]
+
+	in0 -> u1
+	in1 -> u1 [headlabel = 1]
+	 u1 -> u2
+	in2 -> u2 [headlabel = 1]
+	 u2 -> out	
+}
